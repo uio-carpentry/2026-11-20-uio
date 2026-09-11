@@ -1,50 +1,71 @@
 <div id="sql">
   <h3>SQLite</h3>
-  <p>
-    <ul>
-      <li>
-        SQL is a specialized programming language used with databases. We use the database manager called SQLite in our lessons. 
-      </li>
-      <li>
-        We will use a database called Survey.db for the workshop. Download it from here: <a href="https://swcarpentry.github.io/sql-novice-survey/files/survey.db" target="_blank" rel="noopener noreferrer">https://swcarpentry.github.io/sql-novice-survey/files/survey.db</a> 
-        and place it somewhere easily accessible on your computer, such as your document folder or desktop. It will download directly, check your downloads folder.
-        If you have issues downloading the file, copy and paste the url in a new browser window.
-      </li>
-      <li>
-        The program we will use to interact with the SQLite database is a GUI called DB Browser - see below for operating system instructions.
-      </li>
-      <li>
-        Note that you will require a laptop to participate in the workshop, so do the setup on a laptop you are familiar with, if you can.
-      </li>
-    </ul>
-
-  </p>
+  <ul>
+    <li>
+      SQL is a specialized programming language used with databases. We use the database manager called SQLite in our lessons.
+    </li>
+    <li>
+      We will use a database called Survey.db for the workshop. Download it from here: <a href="https://swcarpentry.github.io/sql-novice-survey/files/survey.db" target="_blank" rel="noopener noreferrer">https://swcarpentry.github.io/sql-novice-survey/files/survey.db</a>
+      and place it somewhere easily accessible on your computer, such as your document folder or desktop. It will download directly, check your downloads folder.
+      If you have issues downloading the file, copy and paste the url in a new browser window.
+    </li>
+    <li>
+      The program we will use to interact with the SQLite database is a GUI called DB Browser - see below for operating system instructions.
+    </li>
+    <li>
+      Note that you will require a laptop to participate in the workshop, so do the setup on a laptop you are familiar with, if you can.
+    </li>
+  </ul>
   <div>
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#sql-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#sql-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#sql-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    <ul class="nav nav-tabs os-tabs" role="tablist" aria-label="Operating system">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="sql-windows-tab"
+                data-os="windows" data-bs-toggle="tab"
+                data-bs-target="#sql-windows" type="button" role="tab"
+                aria-controls="sql-windows" aria-selected="true">
+          Windows
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sql-macos-tab"
+                data-os="macos" data-bs-toggle="tab"
+                data-bs-target="#sql-macos" type="button" role="tab"
+                aria-controls="sql-macos" aria-selected="false">
+          MacOS
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sql-linux-tab"
+                data-os="linux" data-bs-toggle="tab"
+                data-bs-target="#sql-linux" type="button" role="tab"
+                aria-controls="sql-linux" aria-selected="false">
+          Linux
+        </button>
+      </li>
     </ul>
     <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="sql-windows">
+      <article role="tabpanel" class="tab-pane active" id="sql-windows"
+               aria-labelledby="sql-windows-tab" tabindex="0">
         <ul>
           <li>Download the <a href="https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.msi">Windows installer for DB Browser</a>.</li>
           <li>It will download directly, check your downloads folder and install it on your laptop.</li>
           <li>
-            <b>NOTE:</b> If you are unable to get admin rights on your laptop, you can download a 
+            <b>NOTE:</b> If you are unable to get admin rights on your laptop, you can download a
             <a href="https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/SQLiteDatabaseBrowserPortable_3.13.1.paf.exe">"portable" version of DB browser</a> that does not require admin to install.
           </li>
           <li>But please do install the regular version of DB Browser if you can.</li>
         </ul>
       </article>
-      <article role="tabpanel" class="tab-pane" id="sql-macos">
-         <ul>
+      <article role="tabpanel" class="tab-pane" id="sql-macos"
+               aria-labelledby="sql-macos-tab" tabindex="0">
+        <ul>
           <li>Go to the <a href="https://sqlitebrowser.org/dl/">DB Browser download page</a>.</li>
           <li>Scroll down to the MacOS section and download and install the version of DB Browser that suits your mac.</li>
           <li><b>NOTE:</b> If you are unsure if you have an Intel or an Apple Silicon mac, check <a href="https://support.apple.com/en-us/116943">this help page from apple</a>.</li>
         </ul>
       </article>
-      <article role="tabpanel" class="tab-pane" id="sql-linux">
+      <article role="tabpanel" class="tab-pane" id="sql-linux"
+               aria-labelledby="sql-linux-tab" tabindex="0">
         <ul>
           <li>Go to the <a href="https://sqlitebrowser.org/dl/">DB Browser download page</a>.</li>
           <li>Scroll down to the Linux section.</li>
